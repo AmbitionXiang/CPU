@@ -1,0 +1,78 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date         : Wed Apr 24 11:10:44 2019
+| Host         : DESKTOP-JENDM0L running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file main_control_sets_placed.rpt
+| Design       : main
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    14 |
+| Unused register locations in slices containing registers |    19 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              39 |           26 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              64 |           16 |
+| Yes          | No                    | No                     |              62 |           31 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              16 |            5 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+----------------+
+|    Clock Signal    |                                              Enable Signal                                              |                                             Set/Reset Signal                                            | Slice Load Count | Bel Load Count |
++--------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG     |                                                                                                         |                                                                                                         |                2 |              2 |
+|  nclk1000/Q_reg[2] |                                                                                                         |                                                                                                         |                3 |              3 |
+|  clk_10Hz_BUFG     | ctrlunit1/E[0]                                                                                          | ctrlunit1/SR[0]                                                                                         |                3 |              8 |
+|  clk_10Hz_BUFG     | ctrlunit1/mbr_reg[7]                                                                                    |                                                                                                         |                3 |              8 |
+|  clk_10Hz_BUFG     | ctrlunit1/mbr_reg[7]                                                                                    | ctrlunit1/your_instance_name/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_16_16/O |                2 |              8 |
+|  clk_10Hz_BUFG     | register1/car_reg[7][0]                                                                                 |                                                                                                         |                7 |              8 |
+|  clk_10Hz_BUFG     | ctrlunit1/mar_reg[7][0]                                                                                 |                                                                                                         |                2 |              8 |
+|  clk_10Hz_BUFG     | ctrlunit1/your_instance_name/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_4_4/O   |                                                                                                         |                4 |              8 |
+|  nclk1000/Q_reg[2] | c/segG_reg_0                                                                                            |                                                                                                         |                8 |             14 |
+|  clk_10Hz_BUFG     | ctrlunit1/your_instance_name/U0/synth_options.dist_mem_inst/gen_sp_ram.spram_inst/ram_reg_0_255_12_12/O |                                                                                                         |                7 |             16 |
+|  clk_IBUF_BUFG     |                                                                                                         | nclk1000/count_p[0]_i_1__0_n_0                                                                          |                8 |             32 |
+|  clk_IBUF_BUFG     |                                                                                                         | nclk1/count_p[0]_i_1_n_0                                                                                |                8 |             32 |
+|  clk_10Hz_BUFG     | we                                                                                                      |                                                                                                         |               16 |             64 |
+|  clk_10Hz_BUFG     |                                                                                                         |                                                                                                         |               47 |            138 |
++--------------------+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 2      |                     1 |
+| 3      |                     1 |
+| 8      |                     6 |
+| 14     |                     1 |
+| 16+    |                     5 |
++--------+-----------------------+
+
+

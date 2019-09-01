@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Apr 24 10:43:40 2019
+# Process ID: 12644
+# Current directory: D:/CPU/CPU.runs/dist_mem_gen_0_synth_1
+# Command line: vivado.exe -log dist_mem_gen_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source dist_mem_gen_0.tcl
+# Log file: D:/CPU/CPU.runs/dist_mem_gen_0_synth_1/dist_mem_gen_0.vds
+# Journal file: D:/CPU/CPU.runs/dist_mem_gen_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source dist_mem_gen_0.tcl -notrace

@@ -1,0 +1,199 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2017.1 (win64) Build 1846317 Fri Apr 14 18:55:03 MDT 2017
+| Date             : Wed Apr 24 11:11:27 2019
+| Host             : DESKTOP-JENDM0L running 64-bit major release  (build 9200)
+| Command          : report_power -file main_power_routed.rpt -pb main_power_summary_routed.pb -rpx main_power_routed.rpx
+| Design           : main
+| Device           : xc7a100tcsg324-1
+| Design State     : routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+----------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+----------------------------------+
+| Total On-Chip Power (W)  | 34.827 (Junction temp exceeded!) |
+| Dynamic (W)              | 34.030                           |
+| Device Static (W)        | 0.797                            |
+| Effective TJA (C/W)      | 4.6                              |
+| Max Ambient (C)          | 0.0                              |
+| Junction Temperature (C) | 125.0                            |
+| Confidence Level         | Low                              |
+| Setting File             | ---                              |
+| Simulation Activity File | ---                              |
+| Design Nets Matched      | NA                               |
++--------------------------+----------------------------------+
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Slice Logic              |     7.296 |     1167 |       --- |             --- |
+|   LUT as Logic           |     7.070 |      553 |     63400 |            0.87 |
+|   CARRY4                 |     0.164 |       53 |     15850 |            0.33 |
+|   LUT as Distributed RAM |     0.027 |      168 |     19000 |            0.88 |
+|   Register               |     0.018 |      181 |    126800 |            0.14 |
+|   F7/F8 Muxes            |     0.010 |      126 |     63400 |            0.20 |
+|   BUFG                   |     0.006 |        2 |        32 |            6.25 |
+|   Others                 |     0.000 |       14 |       --- |             --- |
+| Signals                  |     6.211 |      813 |       --- |             --- |
+| I/O                      |    20.524 |       18 |       210 |            8.57 |
+| Static Power             |     0.797 |          |           |                 |
+| Total                    |    34.827 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |    14.077 |      13.515 |      0.563 |
+| Vccaux    |       1.800 |     0.845 |       0.752 |      0.093 |
+| Vcco33    |       3.300 |     5.811 |       5.807 |      0.004 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.018 |       0.000 |      0.018 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 4.6                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++-------+--------+-----------------+
+| Clock | Domain | Constraint (ns) |
++-------+--------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-------------------------------------+-----------+
+| Name                                | Power (W) |
++-------------------------------------+-----------+
+| main                                |    34.030 |
+|   alu1                              |    12.367 |
+|   c                                 |     0.247 |
+|   ctrlunit1                         |     0.558 |
+|     your_instance_name              |     0.000 |
+|       U0                            |     0.000 |
+|         synth_options.dist_mem_inst |     0.000 |
+|           gen_sp_ram.spram_inst     |     0.000 |
+|             ram_reg_0_255_0_0       |     0.000 |
+|             ram_reg_0_255_10_10     |     0.000 |
+|             ram_reg_0_255_11_11     |     0.000 |
+|             ram_reg_0_255_12_12     |     0.000 |
+|             ram_reg_0_255_14_14     |     0.000 |
+|             ram_reg_0_255_15_15     |     0.000 |
+|             ram_reg_0_255_16_16     |     0.000 |
+|             ram_reg_0_255_17_17     |     0.000 |
+|             ram_reg_0_255_18_18     |     0.000 |
+|             ram_reg_0_255_19_19     |     0.000 |
+|             ram_reg_0_255_1_1       |     0.000 |
+|             ram_reg_0_255_20_20     |     0.000 |
+|             ram_reg_0_255_21_21     |     0.000 |
+|             ram_reg_0_255_22_22     |     0.000 |
+|             ram_reg_0_255_23_23     |     0.000 |
+|             ram_reg_0_255_24_24     |     0.000 |
+|             ram_reg_0_255_25_25     |     0.000 |
+|             ram_reg_0_255_27_27     |     0.000 |
+|             ram_reg_0_255_2_2       |     0.000 |
+|             ram_reg_0_255_3_3       |     0.000 |
+|             ram_reg_0_255_4_4       |     0.000 |
+|             ram_reg_0_255_5_5       |     0.000 |
+|             ram_reg_0_255_6_6       |     0.000 |
+|             ram_reg_0_255_7_7       |     0.000 |
+|             ram_reg_0_255_8_8       |     0.000 |
+|             ram_reg_0_255_9_9       |     0.000 |
+|   memory                            |     0.090 |
+|     U0                              |     0.090 |
+|       synth_options.dist_mem_inst   |     0.090 |
+|         gen_sp_ram.spram_inst       |     0.090 |
+|           ram_reg_0_255_0_0         |     0.007 |
+|           ram_reg_0_255_10_10       |     0.010 |
+|           ram_reg_0_255_11_11       |     0.006 |
+|           ram_reg_0_255_12_12       |     0.005 |
+|           ram_reg_0_255_13_13       |     0.005 |
+|           ram_reg_0_255_14_14       |     0.005 |
+|           ram_reg_0_255_15_15       |     0.005 |
+|           ram_reg_0_255_1_1         |     0.007 |
+|           ram_reg_0_255_2_2         |     0.006 |
+|           ram_reg_0_255_3_3         |     0.007 |
+|           ram_reg_0_255_4_4         |     0.004 |
+|           ram_reg_0_255_5_5         |     0.009 |
+|           ram_reg_0_255_6_6         |     0.005 |
+|           ram_reg_0_255_7_7         |     0.004 |
+|           ram_reg_0_255_8_8         |     0.003 |
+|           ram_reg_0_255_9_9         |     0.004 |
+|   nclk1                             |     0.018 |
+|   nclk1000                          |     0.014 |
+|   register1                         |     0.016 |
++-------------------------------------+-----------+
+
+

@@ -1,0 +1,17 @@
+0.6
+2017.1
+Apr 14 2017
+19:10:27
+D:/CPU/CPU.sim/sim_1/behav/glbl.v,1492045073,verilog,,,,glbl,,,,,,,,
+D:/CPU/CPU.srcs/sim_1/new/testbench_whole.v,1556074719,verilog,,,,testbench_whole,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/ip/dist_mem_gen_0/sim/dist_mem_gen_0.v,1556074854,verilog,,,,dist_mem_gen_0,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/ip/dist_mem_gen_1_2/sim/dist_mem_gen_1.v,1554973342,verilog,,,,dist_mem_gen_1,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/alu.v,1556074829,verilog,,,,alu,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/counter_sync_r.v,1554992653,verilog,,,,counter_sync_r,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/ctrlunit.v,1554995362,verilog,,,,ctrlunit,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/disp_dec.v,1555580570,verilog,,,,disp_dec,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/dual_hex.v,1554994140,verilog,,,,dual_hex,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/int_div.v,1554992720,verilog,,,,int_div,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/main.v,1556074710,verilog,,,,main,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/register.v,1554987787,verilog,,,,register,,,,,,,,
+D:/CPU/CPU.srcs/sources_1/new/seg_decoder.v,1554994185,verilog,,,,seg_decoder,,,,,,,,

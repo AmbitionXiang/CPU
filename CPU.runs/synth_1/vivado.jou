@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.1 (64-bit)
+# SW Build 1846317 on Fri Apr 14 18:55:03 MDT 2017
+# IP Build 1846188 on Fri Apr 14 20:52:08 MDT 2017
+# Start of session at: Wed Apr 24 11:09:09 2019
+# Process ID: 13456
+# Current directory: D:/CPU/CPU.runs/synth_1
+# Command line: vivado.exe -log main.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source main.tcl
+# Log file: D:/CPU/CPU.runs/synth_1/main.vds
+# Journal file: D:/CPU/CPU.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source main.tcl -notrace
